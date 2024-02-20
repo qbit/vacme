@@ -146,8 +146,6 @@ hi!  MatchParen    term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=NONE  
 " {{{ Interface Colors
 " *********************************************************
 
-exe "hi! Normal"        ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W1    ." ctermbg=".s:WC1
-exe "hi! Visual"        ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W2    ." ctermbg=".s:WC2
 exe "hi! NonText"       ." guifg=".s:W3    ." ctermfg=".s:WC3
 exe "hi! StatusLine"    ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:C1    ." ctermbg=".s:CC1    ." cterm=bold,underline"    ." gui=bold,underline"
 exe "hi! StatusLineNC"  ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:C1    ." ctermbg=".s:CC1
@@ -173,6 +171,12 @@ exe "hi! CursorLine"    ." guibg=".s:G1    ." ctermbg=".s:GC1
 hi! link TabLine StatusLineNC
 hi! link TabLineFill StatusLineNC
 hi! link SignColumn LineNr
+
+hi! LineColumn NONE
+hi! SignColumn NONE
+hi! Normal ctermbg=NONE ctermfg=NONE
+hi! Visual cterm=NONE ctermfg=NONE ctermbg=222 gui=NONE
+hi! Search cterm=NONE ctermbg=yellow ctermfg=NONE
 
 " ColorColumn
 " Cursor
